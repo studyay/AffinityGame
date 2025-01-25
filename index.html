@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제목</title>
+    <style>
+        #test {
+            display: flex;
+            justify-content: center;
+            align-items: center;    
+        }
+        body {
+            height: 100vh;
+            background-color: hotpink;
+        }
+        #gameContainer {
+            position: relative;
+        }
+        canvas {
+            display: block;
+            border-radius: 30px;
+        }
+        #scoreBoard {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: hotpink;
+            background-color: rgba(0, 0, 0, 0.471);
+            padding: 10px;
+            border-radius: 15px;
+            font-size: 22px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Affinity Universe 장애물 피하기 게임</h1>
+    <div id="test">
+        <div id="gameContainer">
+            <div id="scoreBoard">
+                <div id="distance">POINT: 0</div>
+                <div id="bestScore">BEST: 0</div>
+            </div>
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
